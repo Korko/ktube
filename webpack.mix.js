@@ -11,5 +11,12 @@ const { mix } = require('laravel-mix');
  |
  */
 
+mix.webpackConfig({
+  externals: {
+    gapi: 'gapi'
+  }
+});
+
 mix.js('resources/assets/js/app.js', 'public/js')
+   .extract(['vue'])
    .sass('resources/assets/sass/app.scss', 'public/css');

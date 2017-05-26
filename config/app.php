@@ -177,6 +177,11 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        /*
+         * Vendors Service Providers...
+         */
+        Spatie\BladeJavaScript\BladeJavaScriptServiceProvider::class,
+
     ],
 
     /*
